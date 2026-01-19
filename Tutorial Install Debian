@@ -1,0 +1,27 @@
+# Install-debian
+Persiapan
+Unduh VirtualBox: Dapatkan dari situs resmi VirtualBox. 
+Unduh ISO Debian: Dapatkan file debian-*-amd64-netinst.iso (atau versi DVD) dari situs resmi Debian. 
+Langkah-langkah Instalasi
+Buat Mesin Virtual Baru:
+Buka VirtualBox, klik New. 
+Beri nama (misal: Debian), pilih Type: Linux, Version: Debian (64-bit). 
+Alokasikan RAM (minimal 1024 MB disarankan). 
+Buat virtual hard disk (VDI, Dynamically allocated, ukuran minimal 10GB). 
+Atur Pengaturan Mesin Virtual:
+Pilih mesin virtual baru, klik Settings. 
+Pilih Storage, pada Controller: IDE, klik ikon CD, lalu pilih file ISO Debian yang sudah Anda unduh. 
+Pastikan jaringan (Network) diatur ke NAT. 
+Klik OK, lalu Start mesin virtual. 
+Proses Instalasi Debian:
+Pilih metode instalasi (misal: Graphical Install atau Install untuk teks). 
+Pilih Bahasa, Lokasi, Tata Letak Keyboard (misal: English, United States). 
+Masukkan Hostname (nama komputer) dan Domain Name (opsional). 
+Atur kata sandi root. 
+Buat user biasa (nama lengkap, username, password). 
+Pada partisi, pilih Guided - use entire disk atau Manual jika tahu cara, lalu pilih All files in one partition (untuk pemula) dan konfirmasi untuk menulis perubahan ke disk (Yes). 
+Pilih perangkat lunak yang ingin diinstal (Standard system utilities biasanya cukup). 
+Install the GRUB boot loader: Pilih Yes, lalu pilih drive utama (biasanya /dev/sda). 
+Klik Finish Installation, lalu Continue untuk restart. 
+Selesai:
+Setelah restart, Anda akan masuk ke tampilan login Debian. Masukkan username dan password yang telah Anda buat
